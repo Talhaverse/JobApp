@@ -29,7 +29,7 @@ const fetchData = async () => {
         
     } catch (error) {
         setError(error);
-        alert("There is an error")
+        alert("There is an unexpected error")
     } finally {
         setIsLoading(false);
     }

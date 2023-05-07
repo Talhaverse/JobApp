@@ -11,9 +11,14 @@ const Home = () => {
 const router = useRouter();
 const [searchTerm,setSearchTerm] = useState(" ")
 
-const handlePress = () => {
+const menuPress = () => {
     // Do something when the button is pressed
     Alert.alert('hello')
+  };
+
+  const picPress = () => {
+    // Do something when the button is pressed
+    Alert.alert('Made by Syed Talha Ahmed aka TALHAVERSE')
   };
 
     return (
@@ -22,10 +27,10 @@ const handlePress = () => {
     headerStyle: {backgroundColor: COLORS.lightWhite},
     headerShadowVisible: false,
     headerLeft:()=>(
-        <ScreenHeaderBtn iconUrl={icons.menu} dimension = "60%" onPress = {handlePress}  />
+        <ScreenHeaderBtn iconUrl={icons.menu} dimension = "60%" onPress = {menuPress}  />
     ),
     headerRight:()=>(
-        <ScreenHeaderBtn iconUrl={images.profile} dimension = "100%" onPress = {handlePress} />
+        <ScreenHeaderBtn iconUrl={images.profile} dimension = "100%" onPress = {picPress} />
     ),
     headerTitle:" Work Finder ",
 }} 

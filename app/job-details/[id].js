@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text,SafeAreaView,ScrollView,ActivityIndicator,RefreshControl } from 'react-native';
+import { View, Text,SafeAreaView,ScrollView,ActivityIndicator,RefreshControl,Alert } from 'react-native';
 import { Stack, useRouter, useSearchParams } from 'expo-router';
 import { useCallback, useState } from 'react';
 
@@ -44,6 +44,11 @@ const {data, error, isLoading, refetch} = useFetch('job-details',{
     job_id : params.id
 });
 
+const menuPress = () => {
+  // Do something when the button is pressed
+   Alert.alert('...');
+ };
+
   return (
     <SafeAreaView style={{flex:1,backgroundColor:COLORS.lightWhite}}>
 
@@ -58,7 +63,7 @@ options={{
         onPress={()=>router.back()} />
     ),
     headerRight:()=>(
-        <ScreenHeaderBtn iconUrl={icons.share} dimension='60%' />
+        <ScreenHeaderBtn iconUrl={icons.share} dimension='60%' onPress = {menuPress} />
     ),
     headerTitle:'',
 }}

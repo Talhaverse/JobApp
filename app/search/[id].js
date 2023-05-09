@@ -26,7 +26,7 @@ const JobSearch = () => {
                 method: "GET",
                 url: `https://jsearch.p.rapidapi.com/search`,
                 headers: {
-                    "X-RapidAPI-Key": '347a35707cmsh6dd5219930e229bp1d51c9jsn83d636a00144',
+                    "X-RapidAPI-Key": '230b4c0b6dmshcc499f240828f34p13e054jsn67b2ad3d9d63   ',
                     "X-RapidAPI-Host": "jsearch.p.rapidapi.com",
                 },
                 params: {

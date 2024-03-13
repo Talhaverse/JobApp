@@ -1,6 +1,6 @@
 # Expo React Native Application 
 
-Welcome to my Expo React Native application showcase repository! This repository contains a modern and sleek React Native application built using Expo. The project demonstrates my skills and learnings in React Native development, including best coding practices, clean and maintainable code, and an amazing UI/UX design.
+Welcome to my Expo React Native application showcase repository! This repo contains a modern and sleek React Native application built using Expo. The project demonstrates my skills and learnings in React Native development, including best coding practices, clean and maintainable code, and an amazing UI/UX design.
 
 ## Features
 
